@@ -1,0 +1,274 @@
+@import url('https://fonts.googleapis.com/css2?family=Oi&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oi&family=Ole&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
+
+body{
+    background-color: #f5ea9e;
+
+
+}
+
+.content {
+    display: flex; 
+    flex-direction: column;
+    align-items: center;
+}
+
+h1{
+    font-family: 'Oi', serif;
+    font-weight: 400;
+    font-size: 150px;
+    color: orange;
+    margin-bottom: 5px;
+}
+
+#contadorVisitas{
+    font-size: 80px;
+}
+
+p{
+    font-family: "Ole", cursive;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 50px;
+    margin-top: 5px;
+}
+
+#btnReestablecer{
+    width: 400px;
+    font-family: "Roboto Mono", monospace;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 25px;
+    color: white; 
+    background-color: orange;
+}
+
+#btnReestablecer:hover{
+    color: black;
+    background-color: white;
+    
+}
+
+.gifCelebracion {
+    display: block; 
+    position: fixed;
+    z-index: 1000;
+}
+
+/*Lisa*/
+#gifCelebracion10 {
+    top: 50%;
+    left: 60%;
+    width: 300px;
+}
+
+/*Carlton*/
+#gifCelebracion20 {
+    top: 50%;
+    left: 2%;
+    width: 300px; 
+}
+
+/*Niña*/
+#gifCelebracion30 {
+    top: 70%;
+    left: 20%;
+    width: 200px;
+    
+}
+
+/*Minion*/
+#gifCelebracion40 {
+    top: 70%;
+    left: 89%;
+    width: 200px;
+}
+
+/*Homer*/
+#gifCelebracion50 {
+    top: 5%;
+    left: 40%;
+    width: 150px;
+}
+
+/*Gato guitarra*/
+#gifCelebracion60 {
+    top: 60%;
+    left: 30%;
+    width: 100px;
+}
+
+/*Patito*/
+#gifCelebracion70 {
+    top: 5%;
+    left: 30%;
+    width: 100px;
+}
+
+/*Rick&Morty*/
+#gifCelebracion80 {
+    top: 10%;
+    left: 10%;
+    width: 200px;
+}
+
+/*Hora de aventuras*/
+#gifCelebracion90 {
+    top: 20%;
+    left: 80%;
+    width: 200px;
+}
+
+/*Gato arcoiris*/
+#gifCelebracion100 {
+    top: 30%;
+    left: 68%;
+    width: 300px;
+}
+
+/*Paloma multicolor*/
+#gifCelebracion110 {
+    top: 9%;
+    left: 73%;
+    width: 100px;
+}
+
+/*Señor feliz*/
+#gifCelebracion120 {
+    top: 30%;
+    left: 1%;
+    width: 200px;
+}
+
+/*Michael Jackson*/
+#gifCelebracion130 {
+    top: 10%;
+    left: 1%;
+    width: 100px;
+}
+
+/*Rana triste*/
+#gifCelebracion140 {
+    top: 70%;
+    left: 80%;
+    width: 100px;
+}
+
+/*Calamardo*/
+#gifCelebracion150 {
+    top: 40%;
+    left: 80%;
+    width: 200px;
+}
+
+/*Stich*/
+#gifCelebracion160 {
+    top: 1%;
+    left: 85%;
+    width: 200px;
+}
+
+/*Gatito amoroso*/
+#gifCelebracion170 {
+    top: 40%;
+    left: 20%;
+    width: 200px;
+}
+
+/*Oveja minecraft*/
+#gifCelebracion180 {
+    top: 1%;
+    left: 20%;
+    width: 150px;
+}
+
+/*Bebé*/
+#gifCelebracion190 {
+    top: 5%;
+    left: 60%;
+    width: 100px;
+}
+
+/*TheWowGuy*/
+#gifCelebracion200 {
+    top: 78%;
+    left: 50%;
+    width: 300px;
+}
+
+/*Hacerlo responsive*/
+
+@media (max-width: 1200px) { /*Pantallas grandes de escritorio*/
+    h1 {
+        font-size: 120px;
+    }
+
+    #contadorVisitas {
+        font-size: 60px;
+    }
+
+    p {
+        font-size: 40px;
+    }
+}
+
+@media (max-width: 992px) {  /*Tablets en modo horizontal y portátiles pequeños*/
+    h1 {
+        font-size: 100px;
+    }
+
+    #contadorVisitas {
+        font-size: 50px;
+    }
+
+    p {
+        font-size: 30px;
+    }
+
+    .gifCelebracion {
+        width: 150px;
+    }
+
+}
+
+@media (max-width: 768px) {  /*tablets en modo vertical*/ 
+    h1 {
+        font-size: 80px;
+    }
+
+    #contadorVisitas {
+        font-size: 40px;
+    }
+
+    p {
+        font-size: 25px;
+    }
+
+    #btnReestablecer {
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 576px) {  /*Smartphones*/
+    h1 {
+        font-size: 60px;
+    }
+
+    #contadorVisitas {
+        font-size: 30px;
+    }
+
+    p {
+        font-size: 20px;
+    }
+
+    #btnReestablecer {
+        font-size: 18px;
+    }
+
+    .gifCelebracion {
+        width: 100px;
+    }
+}
