@@ -1,7 +1,7 @@
 let contadorVisitas = document.getElementById("contadorVisitas");
 console.log(contadorVisitas.innerHTML, typeof(contadorVisitas.innerHTML)); // 0 string
 
-let contador = localStorage.getItem('contadorVisitas');
+let contador = localStorage.getItem('contadorVisitas'); // || 0 sustituiría a todas las líneas if
 
 if (contador){
     parseFloat.contador;
@@ -27,6 +27,8 @@ function mostrarGifCelebracion(url, id) {
     gifContainer.appendChild(gifElement);
     gifElement.id = id; 
 }
+
+
 for (let i = 10; i <= contador; i += 10) {
     if (i === 10) {
         mostrarGifCelebracion('https://i.gifer.com/3sjq.gif', `gifCelebracion${i}`);
@@ -77,6 +79,25 @@ const btn = document.getElementById("btnReestablecer");
 btn.addEventListener('click', function(){
     // localStorage.removeItem('contadorVisitas'); // no funciona en la primera visita, porque tarda una visita en crearse
     localStorage.setItem('contadorVisitas', '0'); // así sí 
-    contadorVisitas.innerHTML = 0;
+    contadorVisitas.innerHTML = 0; // MAL. igualarlo a localstorage.getItem("contadorVisitas"); Peligroso llamarle 0. 
     gifContainer.innerHTML=''; 
 })
+
+
+
+/* Código refactorizado por DATA 
+
+const urlBase="https://i.gifer.com/";
+const arrGif=['3sjq', 'ZIb4', 'xz','bf6','6md','4SHX','XOsX','WG8Q','bfX','yC','6oa','14Um','bfR','3nRK','xw','4Jnt','6kc','47tv','xy','6mb'];
+
+localStorage.setItem("contadorgiflocal", (parseInt(localStorage.getItem("contadorgiflocal")) || 0))
+
+let countgif = parseInt(localStorage.getItem("contadorgiflocal"));
+
+if(contador%10==0){
+    mostrarGifCelebracion(`${urlBase}${arrGif[countgif]}.gif`, `gifCelebracion${countgif}`)
+    countgif++
+    localStorage.setItem("contadorgiflocal", countgif);
+}
+
+*/

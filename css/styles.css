@@ -53,7 +53,7 @@ p{
 
 .gifCelebracion {
     display: block; 
-    position: fixed;
+    position: fixed; /*mejor absolute para que no se muevan a medida que scrolleamos*/
     z-index: 1000;
 }
 
@@ -61,7 +61,7 @@ p{
 #gifCelebracion10 {
     top: 50%;
     left: 60%;
-    width: 300px;
+    width: 300px; /* probar con valores relativos */
 }
 
 /*Carlton*/
